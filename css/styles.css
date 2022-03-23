@@ -24,6 +24,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -31,7 +35,9 @@ ul {
   font-size: 26px;
   line-height: 1.2;
 }
-
+.logo-header {
+  color: var(--main-text-color);
+}
 /* site-nav */
 .site-nav .link {
   color: var(--main-text-color);
@@ -45,9 +51,13 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* site-contacts */
 .site-contacts .link {
-  color: var(--main-text-color);
+  color: var(--second-color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -57,6 +67,7 @@ ul {
 .site-contacts .link:focus {
   color: var(--accent-color);
 }
+
 .hero {
   background-color: #2f303a;
   width: 1600px;
@@ -137,9 +148,12 @@ ul {
 .footer {
   background-color: #2f303a;
 }
-
+.logo-footer {
+  color: var(--white-color);
+}
 /* contacts-footer */
 .contacts-footer {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -161,6 +175,7 @@ ul {
 .portfolio-nav .link {
   color: var(--main-text-color);
   background-color: #f5f4fa;
+  font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
